@@ -4,7 +4,8 @@ import { Browser } from 'puppeteer';
 
 const main = async (url: string, index: number) => {
 	const browser: Browser = await puppeteer.launch({
-		headless: 'new'
+		headless: 'new',
+		args: ['--no-sandbox']
 	});
 	const page = await browser.newPage();
 	await page.goto(url);
