@@ -8,7 +8,6 @@ body{
 	background: url(background.svg);
 	background-size: 200%;
 	background-color: #222831;
-	direction: rtl;
 }
 .page{
 	border-style: none;
@@ -23,6 +22,7 @@ body{
 }
 .two-page{
 	padding-right: 10vw;
+	direction: rtl;
 }
 a{
 	width: 35vw;
