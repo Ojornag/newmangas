@@ -2,12 +2,13 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	background: url(background.svg);
-	background-size: 200%;
-	background-color: #222831;
+	background-attachment: fixed;
+	background-size: 110%;
 }
 .page{
 	border-style: none;
 	border-radius: 0;
+	padding-bottom: 1vw;
 }
 .one-page > .page{
 	width: 60vw;
@@ -29,7 +30,6 @@ a{
 	margin-top: 5vh;
 	background-color: #393E46;
 	border-radius: 3vh;
-
 	text-decoration: none;
 	color: #EEEEEE;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,33 +37,47 @@ a{
 
 	display: flex;
 }
-button{
+button, #next{
 	width: 7vh;
 	height: 7vh;
 	border-radius: 50%;
 	position: fixed;
-	top: 1vw;
 	right: 1vw;
 	color: #EEEEEE;
 	background-color: #393E46;
-	border-style: none;
+	border-style: solid;
+	border-color: #F3B700EE;
+	border-width: 1px;
 	font-size: 4vh;
 	text-align: center;
+}
+button{
+    top: 1vw;
 }
 i{
 	margin-top: -1vw;
 }
+#next > i{
+    margin-top: 0.7vw;
+}
+#next{
+    width: 7vh;
+    height: 7vh;
+    bottom: 1vw;
+    padding: 0;
+    display: inline;
+}
 .shadow{
 	position: absolute;
-	width: 40vw;
-	height: 44vh;
-	background-color: #00ADB5A0;
+	width: 40.2vw;
+	height: 44.8vh;
+	background-color: #F3B700EE;
 	filter: blur(1vw);
 	visibility: visible;
-	margin-left: -2.5vw;
+	margin-left: -2.6vw;
 	margin-top: -5vh;
 	z-index: -1;
-	border-radius: 2vh;
+	border-radius: 2.5vh;
 }
 .text{
 	visibility: visible;
@@ -77,7 +91,7 @@ img{
 	border-radius: 1vh;
 	border-style: solid;
 	border-width: 0.5vh;
-	border-color: #00ADB5A0;
+	border-color: #FC7A57EE;
 }
 @media only screen and (max-width: 1000px){
 	a{

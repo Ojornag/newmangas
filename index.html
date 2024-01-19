@@ -1,98 +1,103 @@
-<!doctype html>
-<html>
-	<head>
+<!DOCTYPE html><html><head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<title>New mangas</title>
-		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles.css">
-		<script src = "javascript.js"></script>
-		<script src="data0.js"></script>
-		<script src="data1.js"></script>
-		<script src="data2.js"></script>
-		<script src="data3.js"></script>
-		<script src="data4.js"></script>
-		<script src="data5.js"></script>
-		<script src="data6.js"></script>
-		<script src="data7.js"></script>
+		<link rel="icon" type="image/x-icon" href="newmangas.png">
+		<script src="javascript.js"></script>
 	</head>
 	<body onload="main()">
-		<a href="read.html?id=0">
+		<a id="one-piece-link" href="one-piece.html">
 			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/40086bffb70eef9418678d06a24c03bf.jpg">
-			<div class = "text">
+			<img src="https://otakuteca.com/images/books/cover/615b37c54415c.webp">
+			<div class="text">
 				<h1>One piece</h1>
-				<h4 id = "chap-0"></h4>
-				<p id = "date-0">Por favor espere</p>
+				<h4 id="one-piece-chap"> Capítulo 1104.00</h4>
+				<p id="one-piece-date">Hace 1 día</p>
 			</div>
 		</a>
-
-		<a href="read.html?id=1">
+		
+		<a id="jujutsu-kaisen-link" href="jujutsu-kaisen.html">
 			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/dd166626bed22991350979875b6b6d66.jpg">
-			<div class = "text">
+			<img src="https://otakuteca.com/images/books/cover/5ea1f703b755f.webp">
+			<div class="text">
 				<h1>Jujutsu kaisen</h1>
-				<h4 id = "chap-1"></h4>
-				<p id = "date-1">Por favor espere</p>
+				<h4 id="jujutsu-kaisen-chap"> Capítulo 248.00  La batalla decisiva en el área deshabitada de Shinjuku, Parte 20</h4>
+				<p id="jujutsu-kaisen-date">Hoy</p>
 			</div>
 		</a>
 
-		<a href="read.html?id=2">
+		<a id="chainsaw-man-link" href="chainsaw-man.html">
 			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/7d23a940ce51522962da05291151c163.jpg">
-			<div class = "text">
-				<h1>One punch man</h1>
-				<h4 id = "chap-2"></h4>
-				<p id = "date-2">Por favor espere</p>
-			</div>
-		</a>
-
-		<a href="read.html?id=3">
-			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/1ba0d57d2e694453da9ba9151669e717.jpg">
-			<div class = "text">
-				<h1>Dandadan</h1>
-				<h4 id = "chap-3"></h4>
-				<p id = "date-3">Por favor espere</p>
-			</div>
-		</a>
-
-		<a href="read.html?id=4">
-			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/937598d4287a277ca0a7d75765675a3b.jpg">
-			<div class = "text">
+			<img src="https://otakuteca.com/images/books/cover/5cca10a79a95e.webp">
+			<div class="text">
 				<h1>Chainsaw man</h1>
-				<h4 id = "chap-4"></h4>
-				<p id = "date-4">Por favor espere</p>
+				<h4 id="chainsaw-man-chap"> Capítulo 152.00  Masaje</h4>
+				<p id="chainsaw-man-date">Hace 10 días</p>
+			</div>
+		</a>
+		
+		<a id="kagurabachi-link" href="kagurabachi.html">
+			<div class="shadow"></div>
+			<img src="https://otakuteca.com/images/books/cover/65076987c0141.webp">
+			<div class="text">
+				<h1>Houseki no kuni</h1>
+				<h4 id="kagurabachi-chap"> Capítulo 17.00  Té</h4>
+				<p id="kagurabachi-date">Hoy</p>
+			</div>
+		</a>
+		
+		<a id="one-punch-man-link" href="one-punch-man.html">
+			<div class="shadow"></div>
+			<img src="https://otakuteca.com/images/books/cover/5bc7cc1d2cf73.webp">
+			<div class="text">
+				<h1>One punch man</h1>
+				<h4 id="one-punch-man-chap"> Capítulo 242.00  Así es</h4>
+				<p id="one-punch-man-date">Hace 22 días</p>
 			</div>
 		</a>
 
-		<a href="read.html?id=5">
+		<a id="vinland-saga-link" href="vinland-saga.html">
 			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/d4147e027d0b78c9c9b2a030ad3e6b88.jpg">
-			<div class = "text">
-				<h1>Berserk</h1>
-				<h4 id = "chap-5"></h4>
-				<p id = "date-5">Por favor espere</p>
-			</div>
-		</a>
-
-		<a href="read.html?id=6">
-			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/4697384a57e2a64f5b13783b67d1cde2.jpg">
-			<div class = "text">
+			<img src="https://otakuteca.com/images/books/cover/9715_TMOmanga162946.webp">
+			<div class="text">
 				<h1>Vinland saga</h1>
-				<h4 id = "chap-6"></h4>
-				<p id = "date-6">Por favor espere</p>
-			</div>
+				<h4 id="vinland-saga-chap"> Capítulo 207.00  El viaje de mil años (16)</h4>
+				<p id="vinland-saga-date">Hace 47 días</p>
+				</div>
 		</a>
-
-		<a href="read.html?id=7">
+			
+		<a id="berserk-link" href="berserk.html">
 			<div class="shadow"></div>
-			<img src = "https://i2.mtcdn.xyz/mangas/a16fffc843d85be194268d659e4b10b1.jpg">
-			<div class = "text">
-				<h1>Made in abyss</h1>
-				<h4 id = "chap-7"></h4>
-				<p id = "date-7">Por favor espere</p>
+			<img src="https://otakuteca.com/images/books/cover/5bc80d3ce44c3.webp">
+			<div class="text">
+				<h1>Berserk</h1>
+				<h4 id="berserk-chap"> Capítulo 375.00  Una mañana brumosa y cielos nublados</h4>
+				<p id="berserk-date">Hace 71 días</p>
 			</div>
 		</a>
-	</body>
-</html>
+		
+		<a id="houseki-no-kuni-link" href="houseki-no-kuni.html">
+			<div class="shadow"></div>
+			<img src="https://otakuteca.com/images/books/cover/6361f76439243.webp">
+			<div class="text">
+				<h1>Houseki no kuni</h1>
+				<h4 id="houseki-no-kuni-chap"> Capítulo 105.00</h4>
+				<p id="houseki-no-kuni-date">Hace 83 días</p>
+			</div>
+		</a>
+		
+		<a id="made-in-abyss-link" href="made-in-abyss.html">
+			<div class="shadow"></div>
+			<img src="https://otakuteca.com/images/books/cover/5d19c22310e6a.webp">
+			<div class="text">
+				<h1>Made in abyss</h1>
+				<h4 id="made-in-abyss-chap"> Capítulo 66.50  Volumen 12 Extras</h4>
+				<p id="made-in-abyss-date">Hace 163 días</p>
+			</div>
+		</a>
+	
+
+
+
+
+</body></html>
