@@ -29,18 +29,20 @@ const ids = [
 ];
 
 function write(name, array, url){
+	fs.mkdirSync(`mangas/${name}`, { recursive: true }, (error) => {});
+
 	fs.readFile('read.html', (error, data) => {
 		const $ = cheerio.load(data);
 
 		array.forEach((image, i) => {
-			$('body').append(`<img class = 'page' src = ${name}/${i}.webp></img>`);
+			$('body').append(`<img class = 'page' src = ${i}.webp></img>`);
 
 			https.get(image, {
 				headers: {
 					Referer: url
 				}
 			}, (resp) => {
-				let file = fs.createWriteStream(`${name}/${i}.webp`);
+				let file = fs.createWriteStream(`mangas/${name}/${i}.webp`);
 				resp.pipe(file);
 
 				file.on('finish', () => {
@@ -49,7 +51,7 @@ function write(name, array, url){
 			});
 		});
 
-		fs.writeFile(`${name}.html`, $.html(), (error) => {});
+		fs.writeFile(`mangas/${name}/${name}.html`, $.html(), (error) => {});
 	});
 }
 
