@@ -1,100 +1,118 @@
 <!DOCTYPE html><html><head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<title>New mangas</title>
+		<script src="https://kit.fontawesome.com/55b7168a85.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="icon" type="image/x-icon" href="newmangas.png">
 		<script src="javascript.js"></script>
 	</head>
 	<body onload="main()">
-		<a id="one-piece-link" href="mangas/one-piece/one-piece.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/615b37c54415c.webp">
-			<div class="text">
-				<h1>One piece</h1>
-				<h4 id="one-piece-chap"> Capítulo 1104.00</h4>
-				<p id="one-piece-date">Hace 1 día</p>
-			</div>
-		</a>
-		
-		<a id="jujutsu-kaisen-link" href="mangas/jujutsu-kaisen/jujutsu-kaisen.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/5ea1f703b755f.webp">
-			<div class="text">
-				<h1>Jujutsu kaisen</h1>
-				<h4 id="jujutsu-kaisen-chap"> Capítulo 248.00  La batalla decisiva en el área deshabitada de Shinjuku, Parte 20</h4>
-				<p id="jujutsu-kaisen-date">Hoy</p>
-			</div>
-		</a>
-
-		<a id="chainsaw-man-link" href="mangas/chainsaw-man/chainsaw-man.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/5cca10a79a95e.webp">
-			<div class="text">
-				<h1>Chainsaw man</h1>
-				<h4 id="chainsaw-man-chap"> Capítulo 152.00  Masaje</h4>
-				<p id="chainsaw-man-date">Hace 10 días</p>
-			</div>
-		</a>
-		
-		<a id="kagurabachi-link" href="mangas/kagurabachi/kagurabachi.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/65076987c0141.webp">
-			<div class="text">
-				<h1>Houseki no kuni</h1>
-				<h4 id="kagurabachi-chap"> Capítulo 17.00  Té</h4>
-				<p id="kagurabachi-date">Hoy</p>
-			</div>
-		</a>
-		
-		<a id="one-punch-man-link" href="mangas/one-punch-man/one-punch-man.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/5bc7cc1d2cf73.webp">
-			<div class="text">
-				<h1>One punch man</h1>
-				<h4 id="one-punch-man-chap"> Capítulo 242.00  Así es</h4>
-				<p id="one-punch-man-date">Hace 22 días</p>
-			</div>
-		</a>
-
-		<a id="vinland-saga-link" href="mangas/vinland-saga/vinland-saga.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/9715_TMOmanga162946.webp">
-			<div class="text">
-				<h1>Vinland saga</h1>
-				<h4 id="vinland-saga-chap"> Capítulo 207.00  El viaje de mil años (16)</h4>
-				<p id="vinland-saga-date">Hace 47 días</p>
-				</div>
-		</a>
-			
-		<a id="berserk-link" href="mangas/berserk/berserk.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/5bc80d3ce44c3.webp">
-			<div class="text">
-				<h1>Berserk</h1>
-				<h4 id="berserk-chap"> Capítulo 375.00  Una mañana brumosa y cielos nublados</h4>
-				<p id="berserk-date">Hace 71 días</p>
-			</div>
-		</a>
-		
-		<a id="houseki-no-kuni-link" href="mangas/houseki-no-kuni/houseki-no-kuni.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/6361f76439243.webp">
-			<div class="text">
-				<h1>Houseki no kuni</h1>
-				<h4 id="houseki-no-kuni-chap"> Capítulo 105.00</h4>
-				<p id="houseki-no-kuni-date">Hace 83 días</p>
-			</div>
-		</a>
-		
-		<a id="made-in-abyss-link" href="mangas/made-in-abyss/made-in-abyss.html">
-			<div class="shadow"></div>
-			<img src="https://otakuteca.com/images/books/cover/5d19c22310e6a.webp">
-			<div class="text">
-				<h1>Made in abyss</h1>
-				<h4 id="made-in-abyss-chap"> Capítulo 66.50  Volumen 12 Extras</h4>
-				<p id="made-in-abyss-date">Hace 163 días</p>
-			</div>
-		</a>
+		<button onclick="toggle_add()">
+			<i class="fa-regular fa-plus"></i>
+		</button>
+		<div id="add-page">
+			<label>
+				Name
+				<br>
+				<input id="name-input">
+			</label>
+			<label>
+				ID
+				<br>
+				<input id="id-input">
+			</label>
+			<button id="add" onclick="add_manga()">Add</button>
+		</div>
 	
 
-</body></html>
+
+			<div class="container" style="order: 146172751">
+				<a href="mangas/jujutsu-kaisen/jujutsu-kaisen.html" data-name="jujutsu-kaisen" data-id="2979">
+					<div class="shadow"></div>
+					<img src="https://otakuteca.com/images/books/cover/658c816be83be.webp">
+					<div class="text">
+						<h1>Jujutsu kaisen</h1>
+						<h4> Capítulo 251.00  La Batalla Decisiva en el Área Deshabitada de Shinjuku, Parte 23</h4>
+						<p>Hace 1 día</p>
+					</div>
+				</a>
+				<button id="delete" onclick="delete_manga(this)">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+			</div>
+			
+			<div class="container" style="order: 837374142">
+				<a href="mangas/one-punch-man/one-punch-man.html" data-name="one-punch-man" data-id="2985">
+					<div class="shadow"></div>
+					<img src="https://otakuteca.com/images/books/cover/5bc7cc1d2cf73.webp">
+					<div class="text">
+						<h1>One punch man</h1>
+						<h4> Capítulo 244.00  Genjutsu</h4>
+						<p>Hace 9 días</p>
+					</div>
+				</a>
+				<button id="delete" onclick="delete_manga(this)">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+			</div>
+			
+			<div class="container" style="order: 8613375465">
+				<a href="mangas/berserk/berserk.html" data-name="berserk" data-id="8399">
+					<div class="shadow"></div>
+					<img src="https://otakuteca.com/images/books/cover/5bc80d3ce44c3.webp">
+					<div class="text">
+						<h1>Berserk</h1>
+						<h4> Capítulo 375.00  Una mañana brumosa y cielos nublados</h4>
+						<p>Hace 99 días</p>
+					</div>
+				</a>
+				<button id="delete" onclick="delete_manga(this)">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+			</div>
+			
+			<div class="container" style="order: 16562176420">
+				<a href="mangas/made-in-abyss/made-in-abyss.html" data-name="made-in-abyss" data-id="26904">
+					<div class="shadow"></div>
+					<img src="https://otakuteca.com/images/books/cover/5d19c22310e6a.webp">
+					<div class="text">
+						<h1>Made in abyss</h1>
+						<h4> Capítulo 66.50  Volumen 12 Extras</h4>
+						<p>Hace 191 días</p>
+					</div>
+				</a>
+				<button id="delete" onclick="delete_manga(this)">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+			</div>
+			
+			<div class="container" style="order: 9650177778">
+				<a href="mangas/houseki-no-kuni/houseki-no-kuni.html" data-name="houseki-no-kuni" data-id="20201">
+					<div class="shadow"></div>
+					<img src="https://otakuteca.com/images/books/cover/6361f76439243.webp">
+					<div class="text">
+						<h1>Houseki no kuni</h1>
+						<h4> Capítulo 105.00</h4>
+						<p>Hace 111 días</p>
+					</div>
+				</a>
+				<button id="delete" onclick="delete_manga(this)">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+			</div>
+			
+			<div class="container" style="order: 59780372">
+				<a href="mangas/one-piece/one-piece.html" data-name="one-piece" data-id="624">
+					<div class="shadow"></div>
+					<img src="https://otakuteca.com/images/books/cover/5bc7cb37a8df5.webp">
+					<div class="text">
+						<h1>One piece</h1>
+						<h4> Capítulo 1107.00</h4>
+						<p>Hoy</p>
+					</div>
+				</a>
+				<button id="delete" onclick="delete_manga(this)">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+			</div>
+			</body></html>
