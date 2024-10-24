@@ -35,7 +35,7 @@ function write(name, array, url){
 function get_images(id, name, url){
 	https.get(url, {
 		headers: {
-			Referer: `https://visortmo.com/library/manga/${id}/${name}`
+			Referer: `https://zonatmo.com/library/manga/${id}/${name}`
 		}
 	}, (resp) => {
 		var data = '';
@@ -123,7 +123,7 @@ function update_web(chapter, date, index, image){
 }
 
 function manga(i){
-	https.get(`https://visortmo.com/library/manga/${ids[i]}/${mangas[i]}`, (resp) => {
+	https.get(`https://zonatmo.com/library/manga/${ids[i]}/${mangas[i]}`, (resp) => {
 		var data = '';
 
 		resp.on('data', (chunk) => {
